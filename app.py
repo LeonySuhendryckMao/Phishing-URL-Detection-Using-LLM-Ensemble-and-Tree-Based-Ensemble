@@ -246,6 +246,43 @@ html, body, [class*="css"] {
     font-size: 12px;
     color: rgba(255,255,255,0.2);
 }
+
+/* ── Responsive mobile ── */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 18px;
+    }
+    .hero p {
+        font-size: 13px;
+    }
+    .hero {
+        padding: 1.5rem 0.5rem 1rem;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .metric-val {
+        font-size: 15px;
+    }
+    .metric-label {
+        font-size: 10px;
+    }
+    .result-title-phishing,
+    .result-title-legit {
+        font-size: 16px;
+    }
+    .stRadio > div > label p,
+    .stRadio > div > label span {
+        font-size: 13px !important;
+    }
+    .footer {
+        font-size: 11px;
+        padding: 1.5rem 0.5rem 1rem;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
