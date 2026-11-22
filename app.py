@@ -108,11 +108,10 @@ html, body, [class*="css"] {
     gap: 8px;
 }
 .stRadio > div > label {
-    background: rgba(255,255,255,0.04) !important;
-    border: 1px solid rgba(255,255,255,0.08) !important;
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
     border-radius: 10px !important;
     padding: 10px 14px !important;
-    color: rgba(255,255,255,0.75) !important;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -120,7 +119,16 @@ html, body, [class*="css"] {
     background: rgba(0, 212, 255, 0.08) !important;
     border-color: rgba(0, 212, 255, 0.25) !important;
 }
-.stRadio > div > label[data-baseweb="radio"] input:checked + div {
+/* Fix text color inside radio labels */
+.stRadio > div > label p,
+.stRadio > div > label span,
+.stRadio > div > label div,
+.stRadio label {
+    color: #ffffff !important;
+    font-size: 14px !important;
+}
+.stRadio > div > label:hover p,
+.stRadio > div > label:hover span {
     color: #00d4ff !important;
 }
 
