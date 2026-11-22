@@ -78,10 +78,11 @@ html, body, [class*="css"] {
 
 /* URL input override */
 .stTextInput > div > div > input {
-    background: rgba(255,255,255,0.06) !important;
-    border: 1px solid rgba(255,255,255,0.12) !important;
+    background: #1a2235 !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
     border-radius: 10px !important;
     color: #ffffff !important;
+    caret-color: #ffffff !important;
     font-family: 'Courier New', monospace !important;
     font-size: 14px !important;
     padding: 12px 16px !important;
@@ -89,6 +90,9 @@ html, body, [class*="css"] {
 .stTextInput > div > div > input:focus {
     border-color: #00d4ff !important;
     box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15) !important;
+}
+.stTextInput > div > div > input::placeholder {
+    color: rgba(255,255,255,0.35) !important;
 }
 
 /* Section label */
