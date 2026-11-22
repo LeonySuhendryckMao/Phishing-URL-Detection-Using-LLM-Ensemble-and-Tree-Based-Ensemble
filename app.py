@@ -94,6 +94,13 @@ html, body, [class*="css"] {
 .stTextInput > div > div > input::placeholder {
     color: rgba(255,255,255,0.35) !important;
 }
+/* Press Enter to apply label */
+.stTextInput > div > div > div {
+    color: rgba(255,255,255,0.45) !important;
+}
+.stTextInput [data-testid="InputInstructions"] {
+    color: rgba(255,255,255,0.45) !important;
+}
 
 /* Section label */
 .section-label {
